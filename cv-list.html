@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Recent Search</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="icon" href="assets/images/favicon.png" type="image/x-icon" rel="shortcut icon" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/css/style-bundle.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/rdb-detail.css">
+
+</head>
+<body>
+    <!-- /* Header starts */ -->
+  <header class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper" id="mainHeader">
+        <a href="search.html" class="brand-logo">
+          <img src="assets/images/lj-logo2.png" alt="Lesjeudis.com">
+        </a>
+        
+        <ul class="right">
+
+          <li><a href="#!" class="waves-effect waves-light"><i class="material-icons white-text">search</i></a></li>
+          <li>
+            <a class="dropdown-button notification-header new-alert waves-effect waves-light" id="notificationAlert" href="#!" data-activates="dropdown-notification">
+              <span class="new-notice-alert">1</span>
+              <i class="material-icons white-text">notifications</i>
+            </a>
+            <ul id="dropdown-notification" class="collection dropdown-content notification-drop">
+              <li class="collection-item">
+                <div>
+                  <span class="title">Folders view release</span>
+                  <span class="new badge" data-badge-caption="NOUVEAU"></span>
+                  <p class="content">Cras habitant a porta pretium scelerisque ac parturient quam dictum ad parturient enim.</p>
+                  <small class="secondary-content">3:00 PM</small>
+                </div>
+              </li>
+              <li class="collection-item">
+                <div>
+                  <span class="title">Release on Email Management</span>
+                  <p class="content">Cras habitant a porta pretium scelerisque ac parturient quam dictum ad parturient enim.</p>
+                  <small class="secondary-content">12:30 PM</small>
+                </div>
+              </li>
+              <li class="collection-item">
+                <div>
+                  <span class="title">Skills are available for in search results</span>
+                  <p class="content">Cras habitant a porta pretium scelerisque ac parturient quam dictum ad parturient enim.</p>
+                  <small class="secondary-content">12:30 PM, March 6 2017</small>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#!" class="waves-effect waves-light"><i class="material-icons white-text">help</i></a></li>
+          <li><a href="#!" class="waves-effect waves-light"><i class="material-icons white-text">power_settings_new</i></a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- /* Header ends */ -->
+    
+    <main>
+    <div class="row">
+        <div class="col s12 padding-0">
+            <div class="card padding-0 margin-20 side-nav fixed">
+        <div class="col s12 padding-0">
+            <div class="save-search-container">
+            <ul class="save-search-lft">
+                <li><a class="waves-effect btn-flat"><i class="material-icons">search</i></a></li>
+                <li><a class="waves-effect btn-flat save-search-btn">Enregistrer la recherche</a></li>
+                <li><a class="waves-effect btn-flat close-search"><i class="material-icons">close</i></a></li>
+            </ul>
+                
+                 <div class="row savemy-serach">
+                <form class="col s12">
+                  <div class="input-field col s12">
+          <input id="last_name" type="text" class="validate">
+          <label for="last_name">Search Name Max 40 characters</label>
+        </div> 
+    <div class="row">
+        <div class="col s12">
+          <div class="input-field">
+            <input id="email" type="email" class="validate">
+            <label for="email" data-error="wrong" data-success="right">Email</label>
+          </div>
+        </div>
+      </div>
+                    <div class="row cancel-record">
+                        <a class="waves-effect waves-teal btn-flat save-cancel" onclick="Materialize.toast('I am a toast', 4000)">Record</a>
+                     <a class="waves-effect waves btn-flat record" onclick="Materialize.toast('I am a toast', 4000)">Cancel</a>
+                         
+                    </div>
+                </form>
+                </div>
+            </div>
+        
+            </div>
+              
+    </div>
+   
+         <div class="col s8 cv-detail margin-20 right-content  ">
+             <div class="card search_list_result ">
+                 <div class="row">
+             <h3><b>54841</b> CVs correspondent à votre recherche.</h3>
+                 
+                <ul class="tabs tabs-fixed-width tab-demo z-depth-1">
+          <li class="tab"><a href="#test1" class="active"><i class="material-icons white-text">done</i>Pertinence</a></li>
+          <li class="tab"><a class="" href="#test2"><i class="material-icons white-text">filter_list</i>Test 2</a></li>
+        <div class="indicator" style="right: 644px; left: 0px;"></div></ul> 
+             </div>
+             <div class="s12 select-all-cv">
+               <form>
+              <p>
+                  
+      <input type="checkbox" class="filled-in" id="select-all"  />
+      <label for="select-all">Select All</label>
+    </p>   
+              </form> 
+                 <a class="waves-effect btn-flat ">Enregistrer la recherche</a>
+             </div>       
+                 
+             </div>
+        <div class="row cv-heading card padding-0 cv-list-pg hoverable">
+            <ul class="cv-links">
+            <li><i class="material-icons">group</i></li>
+                <li><i class="material-icons">file_download</i></li>
+                <li><i class="material-icons">reply_all</i></li>
+            </ul>
+       <div class="col s11">
+            
+            <div class="row">
+           <div class="col s11 cv-main-detail">
+               <form class="cv-select">
+    <p>
+      <input type="checkbox" class="filled-in" id="cv-select" checked="checked" />
+      <label for="cv-select"></label>
+    </p></form>
+           <h5><i class="material-icons">account_circle</i><b>Marc</b>  <span>Last activity  2 days ago</span></h5>
+               <h2>SUPPORT TECHNIQUE MONÉTIQUE SUPPORT TECHNIQUE
+MONÉTIQUE TECHNIQUE</h2>
+               <p><b>19 ans</b> d'experience recherche un <b>CDI</b> en <b>Aquitaine, Midi Pyrénées, Île de France.</b> 
+Salaire souhaite : <b>19000 euros / an.</b></p>
+               <div class="col skills-formation">
+           
+       
+        <div class="col s12 skills padding-0 ">
+            <blockquote>skills</blockquote>
+            <ul class="skill-list">
+            <li>CSS</li><li>UX</li><li>Web</li><li>Cascading stylesheet</li><li>Framework</li><li>Lynda</li><li>Primary Research</li>
+                
+            </ul>
+            </div>
+                   
+                   
+        
+            
+            
+        </div>
+           </div></div>
+           
+           <div class="row">
+            <div class="col s12">
+              <div class="chip">
+    Tag
+    <i class="close material-icons">close</i>
+  </div><div class="chip">
+    Tag
+    <i class="close material-icons">close</i>
+  </div><div class="chip">
+    Tag
+    <i class="close material-icons">close</i>
+  </div>
+               </div>
+           </div>
+          
+            </div>
+        
+        </div>
+
+             
+             
+    
+        
+             
+    </div>
+        </div>
+        
+        </div>
+    </main>
+
+    <script src="assets/js/bin/jquery-2.2.4.min.js"></script>
+  <script src="assets/js/bin/materialize.min.js"></script>
+  <script src="assets/js/bin/custom.js"></script>
+    <script>
+$(document).ready(function(){
+    $('ul.tabs').tabs('select_tab', 'tab_id');
+    $('.save-search-btn, .close-search, .save-cancel, .record').click(function(){
+        $('.savemy-serach').toggle();
+        $('.save-search-lft').toggleClass("active-save-search");
+        
+    });
+    $("#select-all").click(function(){
+        if(document.getElementById('select-all').checked){
+            
+        $('.cv-select').show(); 
+        }else{
+            $('.cv-select').hide(); 
+        }
+
+    });
+  });
+    </script>
+</body>
+</html>

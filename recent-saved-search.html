@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Recent Search</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="icon" href="assets/images/favicon.png" type="image/x-icon" rel="shortcut icon" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/css/style-bundle.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/rdb-detail.css">
+
+</head>
+<body>
+    <!-- /* Header starts */ -->
+  <header class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper" id="mainHeader">
+        <a href="search.html" class="brand-logo">
+          <img src="assets/images/lj-logo2.png" alt="Lesjeudis.com">
+        </a>
+        
+        <ul class="right">
+
+          <li><a href="#!" class="waves-effect waves-light"><i class="material-icons white-text">search</i></a></li>
+          <li>
+            <a class="dropdown-button notification-header new-alert waves-effect waves-light" id="notificationAlert" href="#!" data-activates="dropdown-notification">
+              <span class="new-notice-alert">1</span>
+              <i class="material-icons white-text">notifications</i>
+            </a>
+            <ul id="dropdown-notification" class="collection dropdown-content notification-drop">
+              <li class="collection-item">
+                <div>
+                  <span class="title">Folders view release</span>
+                  <span class="new badge" data-badge-caption="NOUVEAU"></span>
+                  <p class="content">Cras habitant a porta pretium scelerisque ac parturient quam dictum ad parturient enim.</p>
+                  <small class="secondary-content">3:00 PM</small>
+                </div>
+              </li>
+              <li class="collection-item">
+                <div>
+                  <span class="title">Release on Email Management</span>
+                  <p class="content">Cras habitant a porta pretium scelerisque ac parturient quam dictum ad parturient enim.</p>
+                  <small class="secondary-content">12:30 PM</small>
+                </div>
+              </li>
+              <li class="collection-item">
+                <div>
+                  <span class="title">Skills are available for in search results</span>
+                  <p class="content">Cras habitant a porta pretium scelerisque ac parturient quam dictum ad parturient enim.</p>
+                  <small class="secondary-content">12:30 PM, March 6 2017</small>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#!" class="waves-effect waves-light"><i class="material-icons white-text">help</i></a></li>
+          <li><a href="#!" class="waves-effect waves-light"><i class="material-icons white-text">power_settings_new</i></a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- /* Header ends */ -->
+    
+    <main>
+   <div class="row">
+        <div class="col s11 recent-saved-container">
+            <div class="card recent-saved-tabs">
+            <ul class="tabs tab-demo z-depth-1">
+          <li class="tab"><a href="#test16" class="">Saved searchs</a></li>
+          <li class="tab"><a class="active" href="#test17">Recent Searches</a></li>
+          
+        <div class="indicator" style="right: 502px; left: 96px;"></div></ul>
+                <div class="row">
+                    <p>
+      <input type="checkbox" class="filled-in" id="select-save-search"/>
+      <label for="select-save-search">select all</label>
+    </p>
+                </div>
+            </div>
+            
+            
+            <div class="card saved-search-card">
+            <ul>
+            <li><label>Nom</label>
+            <h5>UX Designers in Paris</h5>    
+            </li> 
+            <li>
+            <label>Paramètres de messagerie</label>
+                <h5><span>Only on Monday</span>
+<span>Raja.Sekar@careerbuilder.com</span></h5>
+            </li>
+                <li><label>Actions</label><h5><a class="btn-flat"><i class="material-icons">edit</i>Edit</a><a class="btn-flat"><i class="material-icons">delete</i>Delete</a><a class="btn-flat"><i class="material-icons">notifications_off</i>Disable</a></h5></li>
+                <li><label>Dernière exécution en ligne</label>
+                <h5><span>15 Apr 2017</span><span>1:54:46 PM</span></h5>
+                </li>
+            </ul>
+            </div>
+            <div class="card recent-search-card">
+                <h5>Mardi 25 Avril 2017</h5>
+                <ul class="recent-search-list">
+                    <li>08:57AM</li>
+                    <li><a>Aucun mot clé</a>
+<span>53240 CVs  Autres critères: Radius : 100</span></li>
+                </ul>
+                <ul class="recent-search-list">
+                    <li>08:57AM</li>
+                    <li><a>Aucun mot clé</a>
+<span>53240 CVs  Autres critères: Radius : 100</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </main>
+
+    <script src="assets/js/bin/jquery-2.2.4.min.js"></script>
+  <script src="assets/js/bin/materialize.min.js"></script>
+  <script src="assets/js/bin/custom.js"></script>
+    <script>
+$(document).ready(function(){
+    $('ul.tabs').tabs('select_tab', 'tab_id');
+    $('.save-search-btn, .close-search, .save-cancel, .record').click(function(){
+        $('.savemy-serach').toggle();
+        $('.save-search-lft').toggleClass("active-save-search");
+        
+    });
+    $("#select-all").click(function(){
+        if(document.getElementById('select-all').checked){
+            
+        $('.cv-select').show(); 
+        }else{
+            $('.cv-select').hide(); 
+        }
+
+    });
+  });
+    </script>
+</body>
+</html>
